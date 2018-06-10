@@ -6,28 +6,30 @@ $(() => {
         el.preventDefault();
         let quantity = $('.quantity').val();
         for (i = 0; i < quantity; i++) {
-            $('.players').append($('<input type="text" placeholder="imię">'))
+            $('.formPlayers').append($('<input class="name" type="text" placeholder="imię">'))
+
 
         }
-        let players = $('.players input');
-        console.log(players)
+
+        // let players = $('.players input');
+        // console.log(players);
+        //
+        // $.each(players, function (i, el) {
+        //     console.log(el)
+        //     $('.nameOfPlayers').append($('<span>', {text: $(this).val()}))
+        //
+        // })
+    });
+
+
+    $('.formPlayers').on("submit", function () {
+        var players = $('.formPlayers input');
+
 
         $.each(players, function (i, el) {
-            console.log(el)
-            $('.nameOfPlayers').append($('<span>', {text: $(this).val()}))
-
+            alert( i + ": " + el );
         })
-    })
-
-
-    // let players = $('.players input');
-    // console.log(players)
-    //
-    // $.each(players, function (i, el) {
-    //     console.log(el)
-    //     $('.nameOfPlayers').append($('<span>', {text: el.val()}))
-    //
-    // })
+    });
 
 
 });
