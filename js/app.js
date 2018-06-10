@@ -23,11 +23,11 @@ $(() => {
 
 
     $('.formPlayers').on("submit", function () {
-        var players = $('.formPlayers input');
+        let players = $('.formPlayers input');
 
 
         $.each(players, function (i, el) {
-            alert( i + ": " + el );
+            alert( i + ": " + $(this).val());
         })
     });
 
