@@ -23,7 +23,7 @@ $(() => {
 
 
     $('.formPlayers').on("submit", function () {
-        let players = $('.formPlayers input');
+        let players = $('.name');
 
 
         $.each(players, function (i, el) {
