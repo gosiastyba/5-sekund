@@ -1,20 +1,26 @@
 body {
     margin: 0;
-    width: 600px;
     margin:0 auto;
     text-align: center;
+    background-image: url("../images/128495-ORX4GM-568.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 header {
     font-size: 5em;
     width: 600px;
     margin:0 auto;
-    background-color: darkorange;
+    background-color: deeppink;
     text-align: center;
     border-radius: 25px;
+    border:10px solid white;
     padding-bottom: 25px;
     padding-top: 25px;
-    margin-top: 25px;
+    margin-top: 5%;
+    color: lavenderblush;
+    font-family: fantasy;
 
 }
 .numberOfPlayers {
@@ -47,12 +53,15 @@ span {
     marigin:0 auto;
 }
 #timer {
-    font-size: 50px;
-    color:red
+    font-size: 80px;
+    color:deeppink;
+
 }
 .question {
-    font-size:30px;
-    color:navy
+    font-size:50px;
+    color:navy;
+    height: auto;
+    background-color: white;
 }
 .listOfPlayers {
     display: none;
@@ -76,27 +85,18 @@ input {
 
 }
 button {
-  /*  padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;*/
-    -moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+
+    -moz-box-shadow:inset 0px 1px 0px 0px #52ffaf;
     -webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
     box-shadow:inset 0px 1px 0px 0px #d9fbbe;
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52));
-    background:-moz-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #39e388), color-stop(1, #44cc84));
+    background:-moz-linear-gradient(top, #6ee3a6 5%, #53cc7c 100%);
     background:-webkit-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
     background:-o-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
     background:-ms-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
     background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52',GradientType=0);
-    background-color:#b8e356;
+    background-color: #52ffaf;
     -moz-border-radius:11px;
     -webkit-border-radius:11px;
     border-radius:11px;
@@ -122,15 +122,25 @@ button:hover {
     background-color:#a5cc52;
 }
 #end {
-    margin-top: 25px;
+    margin-top: 5%;
+    margin-right: 10%;
+    float: right;
+    background-color: deeppink;
+    border:2px solid deeppink;
 }
+/*#gameOver {*/
+    /*justify-content: right;*/
+
+/*}*/
 .container {
     font-size:30px;
 }
-.questions span {
-    font-size:25px;
+.questions {
+    font-size:40px;
 }
 .correct {
+    font-size: 20px;
+    color:gray;
 }
 .playersTable {
     font-size:20px;
@@ -139,14 +149,21 @@ button:hover {
     display: none;
 }
 .playersScore {
-    color:lightgray;
+    color:navy;
+    font-size:15px;
 }
 .large {
     font-size: 50px;
 
 }
+.numberOfPlayers p {
+    color:navy;
+}
 
-/*#gameOver {*/
-    /*display: none;*/
-    /**/
-/*}*/
+h1{
+    color:deeppink;
+}
+.decided {
+    color:black;
+    font-weight: bold;
+}

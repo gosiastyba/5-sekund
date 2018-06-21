@@ -120,7 +120,7 @@ $(() => {
             users[currentPlayerIndex].score++;
 
 
-            $('.playersTable').eq(currentPlayerIndex).text(users[currentPlayerIndex].name + ' ma ' + users[currentPlayerIndex].score + ' puntków');
+            $('.playersTable').eq(currentPlayerIndex).text(users[currentPlayerIndex].name + ' : ' + users[currentPlayerIndex].score + ' punkty');
 
             $("#yes").addClass('hidden');
 
@@ -169,7 +169,8 @@ $(() => {
             questions = questions.filter((question) => question.name !== questions[random].name);
 
 
-            console.log(questions.length)
+            console.log(random);
+            console.log(questions.length);
 
 
             var span = $('<span class="question">', {class: "name"});
@@ -228,8 +229,11 @@ $(() => {
         $('#gameOver').on("click", function () {
 
             $('.container').addClass('hidden');
-            $('.playersScore span').addClass('large');
+            $('.playersScore span').addClass('decided');
             $('#gameOver').addClass('hidden');
+            $('.playersScore').prepend('<h1>Tablica wyników:</h1>');
+            $('.playersTable').eq(currentPlayerIndex).removeClass("activePlayer");
+
 
         })
 

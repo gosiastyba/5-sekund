@@ -20,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="146" column="1" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
+            <state relative-caret-position="160">
+              <caret line="128" column="30" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -32,20 +32,20 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="-380">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <marker date="1529591850691" expanded="true" signature="726:771" ph="..." />
+                <marker date="1529623427375" expanded="true" signature="728:773" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+            <state relative-caret-position="176">
+              <caret line="171" column="12" selection-start-line="171" selection-start-column="12" selection-end-line="171" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -53,8 +53,8 @@
       <file leaf-file-name="db.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/db.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="271" column="6" lean-forward="true" selection-start-line="271" selection-start-column="6" selection-end-line="271" selection-end-column="6" />
+            <state relative-caret-position="133">
+              <caret line="268" column="5" lean-forward="true" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -63,9 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scor</find>
-      <find>lef</find>
-      <find>pla</find>
       <find>consol</find>
       <find>currentPlayerIndex++</find>
       <find>gree</find>
@@ -76,16 +73,26 @@
       <find>random</find>
       <find>debu</find>
       <find>rad</find>
-      <find>end</find>
       <find>contai</find>
       <find>font</find>
       <find>start</find>
-      <find>wojn</find>
       <find>gameOver</find>
       <find>hidd</find>
       <find>playersS</find>
       <find>gameO</find>
+      <find>ma</find>
+      <find>span</find>
+      <find>wojn</find>
       <find>cont</find>
+      <find>light</find>
+      <find>que</find>
+      <find>console</find>
+      <find>nobla</find>
+      <find>end</find>
+      <find>corr</find>
+      <find>czy odpo</find>
+      <find>h1</find>
+      <find>grac</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -98,10 +105,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/questions" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/db/db.json" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/db/db.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -195,21 +202,22 @@
       <workItem from="1528787133571" duration="599000" />
       <workItem from="1529397842534" duration="53874000" />
       <workItem from="1529524536063" duration="25427000" />
-      <workItem from="1529587171767" duration="6970000" />
+      <workItem from="1529587171767" duration="18992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122032000" />
+    <option name="totallyTimeSpent" value="134054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19796558" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19796558" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015649" side_tool="true" visible="true" weight="0.38845554" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5015649" side_tool="true" visible="true" weight="0.38845554" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32970452" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -220,7 +228,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32970452" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -270,7 +277,7 @@
         <state relative-caret-position="225">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <marker date="1529591850691" expanded="true" signature="726:771" ph="..." />
+            <marker date="1529623427375" expanded="true" signature="728:773" ph="..." />
           </folding>
         </state>
       </provider>
@@ -322,7 +329,7 @@
         <state relative-caret-position="600">
           <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding>
-            <marker date="1529591850691" expanded="true" signature="726:771" ph="..." />
+            <marker date="1529623427375" expanded="true" signature="728:773" ph="..." />
           </folding>
         </state>
       </provider>
@@ -374,7 +381,7 @@
         <state relative-caret-position="405">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <marker date="1529591850691" expanded="true" signature="726:771" ph="..." />
+            <marker date="1529623427375" expanded="true" signature="728:773" ph="..." />
           </folding>
         </state>
       </provider>
@@ -412,7 +419,7 @@
         <state relative-caret-position="405">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <marker date="1529591850691" expanded="true" signature="726:771" ph="..." />
+            <marker date="1529623427375" expanded="true" signature="728:773" ph="..." />
           </folding>
         </state>
       </provider>
@@ -436,7 +443,7 @@
         <state relative-caret-position="390">
           <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding>
-            <marker date="1529591850691" expanded="true" signature="726:771" ph="..." />
+            <marker date="1529623427375" expanded="true" signature="728:773" ph="..." />
           </folding>
         </state>
       </provider>
@@ -491,34 +498,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/db.json">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="271" column="6" lean-forward="true" selection-start-line="271" selection-start-column="6" selection-end-line="271" selection-end-column="6" />
+        <state relative-caret-position="176">
+          <caret line="171" column="12" selection-start-line="171" selection-start-column="12" selection-end-line="171" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/db/db.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="146" column="1" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
+        <state relative-caret-position="133">
+          <caret line="268" column="5" lean-forward="true" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="-380">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <marker date="1529591850691" expanded="true" signature="726:771" ph="..." />
+            <marker date="1529623427375" expanded="true" signature="728:773" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+        <state relative-caret-position="160">
+          <caret line="128" column="30" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
         </state>
       </provider>
     </entry>
