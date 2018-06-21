@@ -57,24 +57,23 @@ span {
 .listOfPlayers {
     display: none;
 }
-.playersScore {
-    color:lightgray;
-}
+
 .activePlayer {
     color:green
 }
-.hidden {
-    display: none;
-}
-.large {
-    font-size: 50px;
 
-}
+
 input {
     margin:15px;
     border-radius:25px;
-    width:130px;
-    height: 35px;
+    border:2px solid #b8e356;
+    width:110px;
+    height: 30px;
+    font-size:20px;
+    text-align: center;
+    color:lightslategray;
+
+
 }
 button {
   /*  padding: 15px 25px;
@@ -129,7 +128,25 @@ button:hover {
     font-size:30px;
 }
 .questions span {
-    font-size:30px;
+    font-size:25px;
 }
 .correct {
 }
+.playersTable {
+    font-size:20px;
+}
+.hidden {
+    display: none;
+}
+.playersScore {
+    color:lightgray;
+}
+.large {
+    font-size: 50px;
+
+}
+
+/*#gameOver {*/
+    /*display: none;*/
+    /**/
+/*}*/

@@ -22,12 +22,14 @@ $(() => {
         const users = [];
 
         var timer;
+        var time2;
 
         console.log(users);
         let currentPlayerIndex = 0;
 
 
-        $('#firstInput').on("click", function () {
+        $('#firstInput').on("click", function (e) {
+
             $('.players').slideDown() &&
             $('.firstSlider').slideUp();
 
@@ -97,7 +99,7 @@ $(() => {
 
             var counter = 6;
             var time = function () {
-                var time2 = setInterval(function () {
+                time2 = setInterval(function () {
 
                     counter = counter - 1;
                     $('#timer').html(counter);
@@ -126,7 +128,7 @@ $(() => {
 
             $('.correct').addClass('hidden');
 
-
+            clearInterval(time2);
             clearInterval(timer);
 
 
@@ -139,12 +141,15 @@ $(() => {
 
             $('.correct').addClass('hidden');
 
+            clearInterval(time2);
             clearInterval(timer);
+
 
         });
 /////////////////////////////////////////////////////////////////////////////////////////////
         $("#nextQuestion").on("click", function () {
             clearInterval(timer);
+            clearInterval(time2);
 
 
             $('.playersTable').eq(currentPlayerIndex).removeClass("activePlayer");
@@ -223,7 +228,7 @@ $(() => {
         $('#gameOver').on("click", function () {
 
             $('.container').addClass('hidden');
-            $('.playersScore').addClass('large');
+            $('.playersScore span').addClass('large');
             $('#gameOver').addClass('hidden');
 
         })
