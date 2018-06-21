@@ -26,6 +26,7 @@ $(() => {
         console.log(users);
         let currentPlayerIndex = 0;
 
+
         $('#firstInput').on("click", function () {
             $('.players').slideDown() &&
             $('.firstSlider').slideUp();
@@ -47,7 +48,7 @@ $(() => {
                 users.push(newUser);
 
 
-                const el = $('<p class="playersTable">').text(newUser.name + ' ma ' + newUser.score + ' puntków');
+                const el = $('<p class="playersTable">').text(newUser.name + ':' + newUser.score + ' punkty');
                 $('.playersScore').append(el)
 
             });
@@ -55,8 +56,22 @@ $(() => {
         });
 
         x = 0;
+   /*     function validation() {
 
+
+            var nameOfPlayer = $('.name').val();
+            console.log(nameOfPlayer);
+             if (
+                 nameOfPlayer.length < 3) {
+                 $('.players').prepend('<p> Masz za krótkie imię </p>')
+             };
+        }*/
+//////////////////////////////////////////////////////////////////////////////////////
         $('#startGame').on("click", function () {
+
+
+
+            $('#end').removeClass('hidden');
 
 
             $('.playersTable').eq(currentPlayerIndex).addClass("activePlayer");
@@ -95,14 +110,7 @@ $(() => {
             setTimeout(time, 1000);
 
             $('#timer').html('-');
-
-
-
-            // users[currentPlayerIndex].active = true;
-
-            // const random = [1...questions.length]
-
-            // users[currentPlayerIndex].score++;
+            clearInterval(timer);
 
         });
 ///////////////////////////////////////////////////////////////////////////////
@@ -116,6 +124,9 @@ $(() => {
 
             $('#no').addClass('hidden');
 
+            $('.correct').addClass('hidden');
+
+
             clearInterval(timer);
 
 
@@ -126,12 +137,15 @@ $(() => {
 
             $('#no').addClass('hidden');
 
+            $('.correct').addClass('hidden');
+
             clearInterval(timer);
 
         });
 /////////////////////////////////////////////////////////////////////////////////////////////
         $("#nextQuestion").on("click", function () {
             clearInterval(timer);
+
 
             $('.playersTable').eq(currentPlayerIndex).removeClass("activePlayer");
 
@@ -146,7 +160,11 @@ $(() => {
             $('.questions').children().first().html('');
 
             const random = Math.floor((Math.random()) * questions.length);
-            console.log(random);
+
+            questions = questions.filter((question) => question.name !== questions[random].name);
+
+
+            console.log(questions.length)
 
 
             var span = $('<span class="question">', {class: "name"});
@@ -158,6 +176,9 @@ $(() => {
 
             $('#no').removeClass('hidden');
 
+            $('.correct').removeClass('hidden');
+
+
             $('#timer').html('-');
 
             var counter = 6;
@@ -168,12 +189,11 @@ $(() => {
                     $('#timer').html(counter);
                     if (counter === 0) {
                         clearInterval(timer);
-                        $('#timer').html('Czas minal');
+                        $('#timer').html('Czas minął!!!');
                     }
 
                 }, 1000);
             }, 1000);
-
 
 
         });
@@ -199,8 +219,20 @@ $(() => {
                 $('.listOfPlayers').append($('<span >', {id: i, text: $(this).val()}))
             })
         });
-    }
 
+        $('#gameOver').on("click", function () {
+
+            $('.container').addClass('hidden');
+            $('.playersScore').addClass('large');
+            $('#gameOver').addClass('hidden');
+
+        })
+
+
+        /////////////////////////////////////////////////////////
+
+
+    }
 
     $.ajax({
         url: 'http://localhost:3000/questions'

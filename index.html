@@ -9,42 +9,51 @@
 <header>
     5 sekund
 </header>
+
+
+
 <div class="playersScore"></div>
 
 <div class="firstSlider">
 
     <form class="numberOfPlayers">
         <p>Wpisz liczbę graczy:</p> <input class="quantity" type="number" min="1" max="10"><br>
-        <button id="firstInput" class="submit" type="submit"> Submit</button>
-    </form>
-
-
-</div>
-<div class="players">
-    <form class="formPlayers">
-        <button id="secondInput" class="submit2" type="submit"> Submit</button>
-
+        <button id="firstInput" class="submit" type="submit"> Zatwierdź</button>
     </form>
 </div>
-<div class="nameOfPlayers">
-    <button id="startGame">Zacznij grę !</button>
-    <div class="listOfPlayers"></div>
+
+<div class="container">
+    <div class="players">
+        <form class="formPlayers">
+            <button id="secondInput" class="submit2" type="submit"> Submit</button>
+
+        </form>
+    </div>
+    <div class="nameOfPlayers">
+        <button id="startGame">Zacznij grę !</button>
+        <div class="listOfPlayers"></div>
+
+    </div>
+
+    <div class="questions">
+
+        <span id="timer"></span>
+
+
+        <span class="correct">Czy odpowiedź prawidłowa?</span>
+        <button id="yes">Tak</button>
+        <button id="no">Nie</button>
+
+        <button id="nextQuestion">Następne pytanie</button>
+
+    </div>
 
 </div>
-
-<div class="questions">
-
-    <span id="timer"></span>
+<div id="end" class="hidden">
 
 
-    <span>Czy odpowiedź prawidłowa?</span>
-    <button id="yes">Tak</button>
-    <button id="no">Nie</button>
-
-    <button id="nextQuestion">Następne pytanie</button>
-
+    <button id="gameOver">Zakończ</button>
 </div>
-
 
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
