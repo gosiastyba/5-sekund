@@ -1,18 +1,65 @@
 body {
     margin: 0;
+    width: 600px;
+    margin:0 auto;
+    text-align: center;
 }
 
 header {
     font-size: 5em;
     width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:0 auto;
     background-color: darkorange;
     text-align: center;
 
 }
-.numberOfPlayersplayers {
-    width: 60em;
-    margin-left: auto;
-    margin-right: auto;
+.numberOfPlayers {
+    text-align: center;
+}
+.players {
+    display: none;
+    text-align: center;
+}
+.nameOfPlayers {
+    display: none;
+    text-align: center;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+.questions{
+    display: none;
+    text-align: center;
+
+}
+.nameOfPlayers {
+    text-align: center;
+}
+.firstSlider {
+    /*
+    text-align: center;
+    */
+    marigin:0 auto;
+}
+#timer {
+    font-size: 50px;
+    color:red
+}
+.question {
+    font-size:30px;
+    color:navy
+}
+.listOfPlayers {
+    display: none;
+}
+.playersScore {
+    color:lightgray;
+}
+.activePlayer {
+    color:green
+}
+.hidden {
+    display: none;
 }

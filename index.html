@@ -9,22 +9,39 @@
 <header>
     5 sekund
 </header>
+<div class="playersScore"></div>
 
 <div class="firstSlider">
+
     <form class="numberOfPlayers">
-        Wpisz liczbę graczy: <input class="quantity" type="number" min="1" max="10"><br>
-        <input class="submit" type="submit" value="Submit">
+        <p>Wpisz liczbę graczy:</p> <input class="quantity" type="number" min="1" max="10"><br>
+        <button id="firstInput" class="submit" type="submit"> Submit</button>
     </form>
+
+
 </div>
 <div class="players">
     <form class="formPlayers">
-        <!--<input type="text" placeholder="imię"> nowo utworzyony js przez event na submicie-->
-        <input class="submit2" type="submit" value="Submit">
+        <button id="secondInput" class="submit2" type="submit"> Submit</button>
 
     </form>
 </div>
 <div class="nameOfPlayers">
+    <button id="startGame">Zacznij grę !</button>
+    <div class="listOfPlayers"></div>
 
+</div>
+
+<div class="questions">
+
+    <span id="timer"></span>
+
+
+    <span>Czy odpowiedź prawidłowa?</span>
+    <button id="yes">Tak</button>
+    <button id="no">Nie</button>
+
+    <button id="nextQuestion">Następne pytanie</button>
 
 </div>
 
