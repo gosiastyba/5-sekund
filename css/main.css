@@ -67,9 +67,6 @@ span {
     display: none;
 }
 
-
-
-
 input {
     margin:15px;
     border-radius:25px;
@@ -102,7 +99,7 @@ button{
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
-    font-family: KacstScreen;
+    font-family: SansSerif Arial;
     font-size:15px;
     font-weight:bold;
     padding:10px 24px;
@@ -125,11 +122,7 @@ button:hover {
     margin-right: 10%;
     float: right;
 
-};
-/*#gameOver {*/
-    /*justify-content: right;*/
-
-/*}*/
+}
 .container {
     font-size:30px;
 }

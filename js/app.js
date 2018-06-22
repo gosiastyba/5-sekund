@@ -8,11 +8,6 @@ class Player {
 
 }
 
-// var PlayersName = document.querySelector('#1').innerText;
-// console.log(name);
-// let Player1 = new Player(PlayersName, 1, 0);
-// console.log(Player1);
-
 
 $(() => {
 
@@ -58,17 +53,7 @@ $(() => {
         });
 
         x = 0;
-        /*     function validation() {
 
-
-                 var nameOfPlayer = $('.name').val();
-                 console.log(nameOfPlayer);
-                  if (
-                      nameOfPlayer.length < 3) {
-                      $('.players').prepend('<p> Masz za krótkie imię </p>')
-                  };
-             }*/
-//////////////////////////////////////////////////////////////////////////////////////
         $('#startGame').on("click", function () {
 
 
@@ -117,7 +102,7 @@ $(() => {
             clearInterval(timer);
 
         });
-///////////////////////////////////////////////////////////////////////////////
+
         $('#yes').on('click', function () {
             users[currentPlayerIndex].score++;
 
@@ -135,7 +120,7 @@ $(() => {
 
 
         });
-////////////////////////////////////////////////////////////////////////////////
+
         $('#no').on('click', function () {
             $("#yes").addClass('hidden');
 
@@ -148,7 +133,7 @@ $(() => {
 
 
         });
-/////////////////////////////////////////////////////////////////////////////////////////////
+
         $("#nextQuestion").on("click", function () {
             clearInterval(timer);
             clearInterval(time2);
@@ -167,11 +152,6 @@ $(() => {
             $('.questions').children().first().html('');
 
             const random = Math.floor((Math.random()) * questions.length);
-
-
-           /* console.log(random);
-            console.log(questions.length);*/
-
 
             var span = $('<span class="question">', {class: "name"});
 
@@ -240,8 +220,6 @@ $(() => {
 
 
         })
-
-        /////////////////////////////////////////////////////////
 
     }
 
