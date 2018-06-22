@@ -58,19 +58,18 @@ $(() => {
         });
 
         x = 0;
-   /*     function validation() {
+        /*     function validation() {
 
 
-            var nameOfPlayer = $('.name').val();
-            console.log(nameOfPlayer);
-             if (
-                 nameOfPlayer.length < 3) {
-                 $('.players').prepend('<p> Masz za krótkie imię </p>')
-             };
-        }*/
+                 var nameOfPlayer = $('.name').val();
+                 console.log(nameOfPlayer);
+                  if (
+                      nameOfPlayer.length < 3) {
+                      $('.players').prepend('<p> Masz za krótkie imię </p>')
+                  };
+             }*/
 //////////////////////////////////////////////////////////////////////////////////////
         $('#startGame').on("click", function () {
-
 
 
             $('#end').removeClass('hidden');
@@ -98,18 +97,21 @@ $(() => {
 
 
             var counter = 6;
-            var time = function () {
-                time2 = setInterval(function () {
 
-                    counter = counter - 1;
-                    $('#timer').html(counter);
-                    if (counter === 0) {
-                        clearInterval(time2);
-                    }
+            $('#timer').html('-');
 
-                }, 1000);
-            }
-            setTimeout(time, 1000);
+            time2 = setInterval(function () {
+
+                counter = counter - 1;
+                $('#timer').html(counter);
+                if (counter === 0) {
+                    clearInterval(time2);
+                    $('#timer').html('Czas minął!!!');
+                    document.querySelector('#music').play()
+                }
+
+            }, 1000);
+
 
             $('#timer').html('-');
             clearInterval(timer);
@@ -166,14 +168,13 @@ $(() => {
 
             const random = Math.floor((Math.random()) * questions.length);
 
-            questions = questions.filter((question) => question.name !== questions[random].name);
 
-
-            console.log(random);
-            console.log(questions.length);
+           /* console.log(random);
+            console.log(questions.length);*/
 
 
             var span = $('<span class="question">', {class: "name"});
+
             span.text(questions[random].name);
             $('.questions').prepend(span);
 
@@ -188,19 +189,22 @@ $(() => {
             $('#timer').html('-');
 
             var counter = 6;
-            setTimeout(function () {
-                timer = setInterval(function () {
 
-                    counter = counter - 1;
-                    $('#timer').html(counter);
-                    if (counter === 0) {
-                        clearInterval(timer);
-                        $('#timer').html('Czas minął!!!');
-                    }
+            timer = setInterval(function () {
 
-                }, 1000);
+                counter = counter - 1;
+                $('#timer').html(counter);
+                if (counter === 0) {
+                    clearInterval(timer);
+                    $('#timer').html('Czas minął!!!');
+
+                    document.querySelector('#music').play()
+                }
+
             }, 1000);
 
+
+            questions = questions.filter((question) => question.name !== questions[random].name);
 
         });
 
@@ -237,9 +241,7 @@ $(() => {
 
         })
 
-
         /////////////////////////////////////////////////////////
-
 
     }
 

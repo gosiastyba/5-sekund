@@ -60,16 +60,14 @@ span {
 .question {
     font-size:50px;
     color:navy;
-    height: auto;
     background-color: white;
+
 }
 .listOfPlayers {
     display: none;
 }
 
-.activePlayer {
-    color:green
-}
+
 
 
 input {
@@ -84,7 +82,7 @@ input {
 
 
 }
-button {
+button{
 
     -moz-box-shadow:inset 0px 1px 0px 0px #52ffaf;
     -webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
@@ -104,7 +102,7 @@ button {
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
-    font-family:Arial;
+    font-family: KacstScreen;
     font-size:15px;
     font-weight:bold;
     padding:10px 24px;
@@ -122,12 +120,12 @@ button:hover {
     background-color:#a5cc52;
 }
 #end {
-    margin-top: 5%;
+
+    margin-bottom: 10%;
     margin-right: 10%;
     float: right;
-    background-color: deeppink;
-    border:2px solid deeppink;
-}
+
+};
 /*#gameOver {*/
     /*justify-content: right;*/
 
@@ -167,3 +165,8 @@ h1{
     color:black;
     font-weight: bold;
 }
+.activePlayer {
+    color: #1dd015;
+    font-size:35px;
+}
+
