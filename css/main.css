@@ -121,7 +121,6 @@ button:hover {
     margin-bottom: 10%;
     margin-right: 10%;
     float: right;
-
 }
 .container {
     font-size:30px;
@@ -153,10 +152,12 @@ button:hover {
 
 h1{
     color:deeppink;
+    font-size:40px;
 }
-.decided {
-    color:black;
+    .decided {
+    color:navy;
     font-weight: bold;
+    font-size: 30px;
 }
 .activePlayer {
     color: #1dd015;

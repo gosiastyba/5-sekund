@@ -19,7 +19,6 @@ $(() => {
         var timer;
         var time2;
 
-        console.log(users);
         let currentPlayerIndex = 0;
 
 
@@ -213,10 +212,12 @@ $(() => {
         $('#gameOver').on("click", function () {
 
             $('.container').addClass('hidden');
-            $('.playersScore span').addClass('decided');
             $('#gameOver').addClass('hidden');
             $('.playersScore').prepend('<h1>Tablica wyników:</h1>');
             $('.playersTable').eq(currentPlayerIndex).removeClass("activePlayer");
+            $('.playersTable').addClass('decided');
+            document.querySelector('#music2').play()
+
 
 
         })
