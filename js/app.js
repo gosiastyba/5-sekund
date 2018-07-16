@@ -8,16 +8,13 @@ class Player {
 
 }
 
-
 $(() => {
 
 
-    function insertData(questions) {
+    function insertData(questionData) {
 
         const users = [];
-
-        console.log(questions.questions[0].name);
-
+        
         var timer;
         var time2;
 
@@ -68,18 +65,17 @@ $(() => {
             $('.questions').slideDown();
 
             let array = [];
-            const random = Math.floor((Math.random()) * questions.questions.length);
+            const random = Math.floor((Math.random()) * questionData.questions.length);
             $(array).push($(random));
 
-            console.log(random);
 
 
             var span = $('<span class="question">', {class: "name"});
-            span.text(questions.questions[random].name);
+            span.text(questionData.questions[random].name);
             $('.questions').prepend(span);
 
 
-            questions.questions = questions.questions.filter((question) => question.name !== questions.questions[random].name);
+            questionData.questions = questionData.questions.filter((question) => question.name !== questionData.questions[random].name);
 
             var counter = 6;
 
@@ -118,7 +114,6 @@ $(() => {
             clearInterval(time2);
             clearInterval(timer);
 
-
         });
 
         $('#no').on('click', function () {
@@ -130,7 +125,6 @@ $(() => {
 
             clearInterval(time2);
             clearInterval(timer);
-
 
         });
 
@@ -151,11 +145,11 @@ $(() => {
 
             $('.questions').children().first().html('');
 
-            const random = Math.floor((Math.random()) * questions.questions.length);
+            const random = Math.floor((Math.random()) * questionData.questions.length);
 
             var span = $('<span class="question">', {class: "name"});
 
-            span.text(questions.questions[random].name);
+            span.text(questionData.questions[random].name);
             $('.questions').prepend(span);
 
 
@@ -184,8 +178,7 @@ $(() => {
             }, 1000);
 
 
-
-            questions.questions = questions.questions.filter((question) => question.name !== questions.questions[random].name);
+            questionData.questions = questionData.questions.filter((question) => question.name !== questionData.questions[random].name);
 
         });
 
@@ -220,9 +213,6 @@ $(() => {
             $('.playersTable').addClass('decided');
             document.querySelector('#music2').play()
 
-
-
-
         })
 
     }
@@ -234,12 +224,8 @@ $(() => {
         type : 'GET',
         async: false
 
-
-
-
     }).done(function (data) {
         insertData(data);
-        console.log(data);
     });
 
 
