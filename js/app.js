@@ -16,6 +16,8 @@ $(() => {
 
         const users = [];
 
+        console.log(questions.questions[0].name);
+
         var timer;
         var time2;
 
@@ -66,19 +68,18 @@ $(() => {
             $('.questions').slideDown();
 
             let array = [];
-            const random = Math.floor((Math.random()) * questions.length);
+            const random = Math.floor((Math.random()) * questions.questions.length);
             $(array).push($(random));
 
             console.log(random);
 
 
             var span = $('<span class="question">', {class: "name"});
-            span.text(questions[random].name)
+            span.text(questions.questions[random].name);
             $('.questions').prepend(span);
 
 
-            questions = questions.filter((question) => question.name !== questions[random].name);
-
+            questions.questions = questions.questions.filter((question) => question.name !== questions.questions[random].name);
 
             var counter = 6;
 
@@ -150,11 +151,11 @@ $(() => {
 
             $('.questions').children().first().html('');
 
-            const random = Math.floor((Math.random()) * questions.length);
+            const random = Math.floor((Math.random()) * questions.questions.length);
 
             var span = $('<span class="question">', {class: "name"});
 
-            span.text(questions[random].name);
+            span.text(questions.questions[random].name);
             $('.questions').prepend(span);
 
 
@@ -183,7 +184,8 @@ $(() => {
             }, 1000);
 
 
-            questions = questions.filter((question) => question.name !== questions[random].name);
+
+            questions.questions = questions.questions.filter((question) => question.name !== questions.questions[random].name);
 
         });
 
@@ -220,12 +222,21 @@ $(() => {
 
 
 
+
         })
 
     }
 
     $.ajax({
-        url: 'http://localhost:3000/questions'
+        url: 'db.json',
+        dataType:"json",
+        ContentType:"application/json",
+        type : 'GET',
+        async: false
+
+
+
+
     }).done(function (data) {
         insertData(data);
         console.log(data);
